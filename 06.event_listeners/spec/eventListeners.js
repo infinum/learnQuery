@@ -165,6 +165,17 @@ describe('EventListeners', function() {
     expect(methods.showLove.calls.count()).toEqual(1);
   });
 
+  it('should not trigger delegated event handler if clicked on container of delegator', function() {
+    var $targetElement = $('<p class="target"></p>');
+    $selectedElement.append($targetElement);
+
+    eventListener.delegate(selectedElement, 'target', 'click', methods.showLove);
+
+    $selectedElement.click();
+
+    expect(methods.showLove.calls.count()).toEqual(0);
+  });
+
   it('should trigger delegated event handler multiple times if event happens on multiple elements', function() {
     eventListener.delegate(selectedElement, 'subtitle', 'click', methods.showLove);
 

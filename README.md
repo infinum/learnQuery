@@ -11,7 +11,7 @@ Rules:
   * every task should be tested with [jasmine](http://jasmine.github.io/). Specs should be in the task folder named spec
   * every task should be completed in order. Do not skip ahead, as tasks build upon one another
 
-You should solve one task at a time. Every task is described by specs and your implementation must pass all of them. 
+You should solve one task at a time. Every task is described by specs and your implementation must pass all of them.
 It would be good for you to have one or more mentors, but this is not mandatory. They should go through your code and give you feedback on what is good, what is bad, and how you can write it better. Also, a mentor will help keep you on task, minimize your frustrations, and maximize the value of this project.
 
 ## Tasks
@@ -76,7 +76,7 @@ References:
 
 Description:
 
-* Should be able to set/change single or mutliple CSS property values for selected elements, and also get the value of any existing CSS property
+* Should be able to set/change single or multiple CSS property values for selected elements, and also get the value of any existing CSS property
 
 Examples:
 
@@ -126,7 +126,7 @@ Description:
 	* remove an element
 	* append an element to the DOM
 	* insert an element in the DOM after a specified element
-	* insert an element in the DOM before a specifice element
+	* insert an element in the DOM before a specified element
 	* get the value of a selected element
 
 Examples:
@@ -202,7 +202,7 @@ Examples:
 
 Description:
 
-* Should triger a specific event on a selected element
+* Should trigger a specific event on a selected element
 
 Example:
 
@@ -222,7 +222,7 @@ Example:
 
 ## 7. Make learnQuery!
 
-Create your own learnQuery library using the knowledge gained from making the previous functions. It should include all the functions you created in the previous tasks, and it should look and function similiar to jQuery.
+Create your own learnQuery library using the knowledge gained from making the previous functions. It should include all the functions you created in the previous tasks, and it should look and function similar to jQuery.
 
 You have already created the functionality in the previous tasks.  Now you simply need to provide a way to implement them.
 
@@ -233,7 +233,7 @@ Your solution MUST support CHAINNING!
 Example:
 
 	learnQuery('.thisClass').on('click', callback).removeClass('thisClass').addClass('anotherClass');
-	
+
 
 
 # License

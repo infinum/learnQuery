@@ -43,9 +43,12 @@ describe('domManipulation', function() {
   it('should be able to add a new HTML element after a given HTML element', function() {
     var newElement = document.createElement('div');
 
-    expect($selectedElement.next()[0]).not.toBe(newElement);
-    dom.after(selectedElement, newElement);
-    expect($selectedElement.next()[0]).toBe(newElement);
+    var $targetElement = $('.creature');
+    var targetElement = $targetElement[0];
+
+    expect($targetElement.next()[0]).not.toBe(newElement);
+    dom.after(targetElement, newElement);
+    expect($targetElement.next()[0]).toBe(newElement);
   });
 
   it('should be able to add a new HTML element before a given HTML element', function() {
