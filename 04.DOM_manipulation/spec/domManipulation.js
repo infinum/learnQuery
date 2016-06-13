@@ -59,7 +59,7 @@ describe('domManipulation', function() {
     expect($selectedElement.prev()[0]).toBe(newElement);
   });
 
-  it('should return a value of a given HTML element', function() {
+  it('should return a value of a given HTML non-select element', function() {
     var element = $('.creature')[0];
     var elementValue = dom.val(element);
 
@@ -69,6 +69,11 @@ describe('domManipulation', function() {
 
     elementValue = dom.val(element);
     expect(elementValue).toBe('pikachu');
+  });
+
+  it('should return a value of a given select HTML element', function(){
+    $selectedElement = $selectedElement.affix('select option[value="Option1"]+option[value="Option2"][selected=true]');
+    expect(dom.val(document.querySelector('select'))).toBe('Option2');
   });
 
   it('should not throw exception if the target element is not in the DOM when calling dom.remove', function() {
