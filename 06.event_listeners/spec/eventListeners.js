@@ -183,4 +183,19 @@ describe('EventListeners', function() {
 
     expect(methods.showLove.calls.count()).toEqual(2);
   });
+
+  it('should not trigger method registered on element A when event id triggered on element B', function() {
+    var elementA = document.createElement('div');
+    var elementB = document.createElement('div');
+    $selectedElement.append(elementA);
+    $selectedElement.append(elementB);
+
+    eventListener.on(elementA, 'click', methods.showLove);
+    eventListener.on(elementB, 'click', methods.giveLove);
+
+    $(elementA).trigger('click');
+
+    expect(methods.showLove).toHaveBeenCalled();
+    expect(methods.giveLove).not.toHaveBeenCalled();
+  });
 });
