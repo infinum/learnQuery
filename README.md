@@ -234,7 +234,12 @@ Example:
 
 	learnQuery('.thisClass').on('click', callback).removeClass('thisClass').addClass('anotherClass');
 
+## FAQ
 
+* What "affix()" does?
+
+Affix accepts CSS selectors as arguments and adds those elements to the DOM.
+Details: https://github.com/searls/jasmine-fixture
 
 # License
 LearnQuery is released under the [MIT license](http://www.opensource.org/licenses/MIT).
