@@ -14,7 +14,7 @@ Rules:
 You should solve one task at a time. Every task is described by specs and your implementation must pass all of them.
 It would be good for you to have one or more mentors, but this is not mandatory. They should go through your code and give you feedback on what is good, what is bad, and how you can write it better. Also, a mentor will help keep you on task, minimize your frustrations, and maximize the value of this project.
 
-## Tasks
+# Tasks
 
 All tasks should be compatible with the W3C standard.
 Everything needs to work in all major modern browsers.
@@ -32,9 +32,9 @@ Helpful references:
 
 You need to write a function that computes n-th Fibonacci number.
 
-The code can be found in repository /0.example/src.
+The code can be found in repository /00.example/src.
 
-Also, specs for this task can be found in /0.example/spec.
+Also, specs for this task can be found in /00.example/spec.
 
 
 ## 1. Simple Selector function
@@ -59,10 +59,11 @@ Description:
 
 Examples:
 
-    domSelector('#some-id');
-    domSelector('.some-class');
-    domSelector('some-tag');
-
+```JavaScript
+domSelector('#some-id');
+domSelector('.some-class');
+domSelector('some-tag');
+```
 
 ## 2. CSS manipulation
 
@@ -80,13 +81,16 @@ Description:
 
 Examples:
 
-	//set single property
-	cssProp(htmlElement, cssProperty, value);
-	//set multiple properties
-	cssProp(htmlElement, {cssProperty: value, cssProperty: value});
-	//get CSS property value
-	cssProp(htmlElement, cssProperty);
+```JavaScript
+// set single property
+cssProp(htmlElement, cssProperty, value);
 
+// set multiple properties
+cssProp(htmlElement, {cssProperty: value, cssProperty: value});
+
+// get CSS property value
+cssProp(htmlElement, cssProperty);
+```
 
 ## 3. CSS class manipulation
 
@@ -104,11 +108,12 @@ Description:
 
 Examples:
 
-	cssClass.add(htmlElement, className);
-	cssClass.remove(htmlElement, className);
-	cssClass.toggle(htmlElement, className);
-	cssClass.has(htmlElement, className);
-
+```JavaScript
+cssClass.add(htmlElement, className);
+cssClass.remove(htmlElement, className);
+cssClass.toggle(htmlElement, className);
+cssClass.has(htmlElement, className);
+```
 
 ## 4. DOM manipulation
 
@@ -131,13 +136,14 @@ Description:
 
 Examples:
 
-	dom.remove(element);
-	dom.append(targetElement, element);
-	dom.after(targetElement, element);
-	dom.prepend(targetElement, element);
-	dom.before(targetElement, element);
-	dom.val(targetElement);
-
+```JavaScript
+dom.remove(element);
+dom.append(targetElement, element);
+dom.after(targetElement, element);
+dom.prepend(targetElement, element);
+dom.before(targetElement, element);
+dom.val(targetElement);
+```
 
 ## 5. Ajax request function
 
@@ -158,18 +164,18 @@ Description:
 
 Examples:
 
-	ajaxReq(url, options);
+```JavaScript
+ajaxReq(url, options);
 
-	ajaxReq(url, {
-		method: “POST”,
-		data: {},
-		context: this,
-		failure: function() {},
-		success: function() {},
-		complete: function() {}
-	});
-
-
+ajaxReq(url, {
+  method: 'POST',
+  data: {},
+  context: this,
+  failure: function() {},
+  success: function() {},
+  complete: function() {}
+});
+```
 
 ## 6. Event Listeners
 
@@ -189,14 +195,18 @@ Description:
 
 Examples:
 
-	eventListener.on(element, event, callback);
-	//removes a specific callback on an element of the event type
-	eventListener.off(element, event, callback);
-	//removes all callbacks on an element of the event type
-	eventListener.off(element, event);
-	//removes all callbacks on an element
-	eventListener.off(element);
+```JavaScript
+eventListener.on(element, event, callback);
 
+// removes a specific callback on an element of the event type
+eventListener.off(element, event, callback);
+
+// removes all callbacks on an element of the event type
+eventListener.off(element, event);
+
+// removes all callbacks on an element
+eventListener.off(element);
+```
 
 ### 6.1. Additional Event Listener trigger
 
@@ -217,8 +227,10 @@ Description:
 
 Example:
 
-	eventListener.delegate(monitoredElement, className, event, callback);
-
+```JavaScript
+eventListener
+  .delegate(monitoredElement, className, event, callback);
+```
 
 ## 7. Make learnQuery!
 
@@ -226,15 +238,20 @@ Create your own learnQuery library using the knowledge gained from making the pr
 
 You have already created the functionality in the previous tasks.  Now you simply need to provide a way to implement them.
 
-Your solution MUST support CHAINNING!
+Your solution **must** support **chaining**!
 
 **Hint**: Pay attention to scope, closures, and context.
 
 Example:
 
-	learnQuery('.thisClass').on('click', callback).removeClass('thisClass').addClass('anotherClass');
+```JavaScript
+learnQuery('.thisClass')
+  .on('click', callback)
+  .removeClass('thisClass')
+  .addClass('anotherClass');
+```
 
-## FAQ
+# FAQ
 
 * What "affix()" does?
 
