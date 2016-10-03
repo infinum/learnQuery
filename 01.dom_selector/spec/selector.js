@@ -12,7 +12,7 @@ describe('Selector', function() {
 
     // We're calling $.makeArray because we need to transform jQuery result set into real array object
     var expectedSelectedElement = $.makeArray($(selector));
-    var selectedElement = domSelector();
+    var selectedElement = domSelector(selector);
 
     expect(selectedElement).toEqual(expectedSelectedElement);
     expect(selectedElement.length).toBe(0);
