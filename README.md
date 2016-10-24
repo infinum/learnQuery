@@ -260,3 +260,10 @@ Details: https://github.com/searls/jasmine-fixture
 
 # License
 LearnQuery is released under the [MIT license](http://www.opensource.org/licenses/MIT).
+
+## Credits
+
+Maintained and sponsored by
+[Infinum] (http://www.infinum.co).
+
+<img src="https://infinum.co/infinum.png" width="264">
