@@ -147,9 +147,10 @@ describe('EventListeners', function() {
     var titleEl = document.querySelector('.title');
     var subtitleEl = document.querySelector('.subtitle');
 
-    var eClick = new Event('click');
-    titleEl.dispatchEvent(eClick);
-    subtitleEl.dispatchEvent(eClick);
+    var eClickTitle = new Event('click');
+    var eClickSubtitle = new Event('click');
+    titleEl.dispatchEvent(eClickTitle);
+    subtitleEl.dispatchEvent(eClickSubtitle);
 
     expect(methods.showLove.calls.count()).toEqual(1);
   });
