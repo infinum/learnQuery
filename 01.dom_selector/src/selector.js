@@ -1,5 +1,7 @@
-var domSelector = function(selectors) {
+const domSelector = function (selectors) {
   'use strict';
 
-  //code goes here
-};
+  const selectedNodeList = document.querySelectorAll(selectors);
+
+  return Array.from(selectedNodeList); 
+}; 
