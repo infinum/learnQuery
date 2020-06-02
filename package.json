@@ -8,8 +8,6 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "init-tsconfig": "npm run tsc -- --init",
-    "init-tsconfig-npx": "npx tsc --init",
     "watch-build": "npx tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
