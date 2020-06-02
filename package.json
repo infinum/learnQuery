@@ -1,0 +1,30 @@
+{
+  "name": "learnQuery",
+  "version": "1.0.0",
+  "description": "Your assignment will be to build your own jQuery library through a series of different steps. This will help you learn JavaScript.\r All tasks are jQuery equivalent methods.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "init-tsconfig": "npm run tsc -- --init",
+    "init-tsconfig-npx": "npx tsc --init",
+    "watch-build": "npx tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvenKolaric/learnQuery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvenKolaric/learnQuery/issues"
+  },
+  "homepage": "https://github.com/SvenKolaric/learnQuery#readme",
+  "dependencies": {
+    "typescript": "^3.9.3"
+  }
+}
