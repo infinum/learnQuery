@@ -1,0 +1,26 @@
+{
+  "name": "learnquery",
+  "version": "1.0.0",
+  "description": "Your assignment will be to build your own jQuery library through a series of different steps. This will help you learn JavaScript. All tasks are jQuery equivalent methods.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "watch": "npx tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskalnik/learnQuery.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskalnik/learnQuery/issues"
+  },
+  "homepage": "https://github.com/mskalnik/learnQuery#readme"
+}
